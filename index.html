@@ -37,9 +37,9 @@
       transition: background-color 0.3s ease;
     }
     html.dark header {
-      background-color: transparent;
-      backdrop-filter: none;
-      -webkit-backdrop-filter: none;
+      background-color: rgba(26, 28, 34, 0.8);
+      backdrop-filter: saturate(180%) blur(10px);
+      -webkit-backdrop-filter: saturate(180%) blur(10px);
     }
 
     /* Fade in effect */
@@ -117,7 +117,10 @@
   <header class="fixed top-0 left-0 right-0 z-50 shadow-md">
     <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
       <!-- Left side: site title -->
-      <h1 class="text-2xl font-bold cursor-default select-none">MySite</h1>
+      <div class="flex items-center space-x-3">
+        <img src="images/logo.png" alt="Logo" class="h-8 w-auto object-contain" />
+        <h1 class="text-2xl font-bold cursor-default select-none">MySite</h1>
+      </div>
 
       <!-- Right side: nav links + toggle -->
       <div class="flex items-center space-x-8">
@@ -170,6 +173,7 @@
       <h2 class="text-4xl font-semibold mb-4">Home</h2>
       <p class="text-lg leading-relaxed">
         Welcome to my homepage! This site uses Tailwind CSS and includes a dark mode toggle with a floating navbar.
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       </p>
     </section>
 
