@@ -82,6 +82,59 @@
       background-color: rgba(26 28 34 / 0.8);
       color: #e5e7eb;
     }
+
+    /* Table container with border & rounded corners */
+    .table-container {
+      border: 2px solid #666666;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      margin-top: 1.5rem;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    html.dark .table-container {
+      border-color: #888888;
+      box-shadow: 0 0 8px rgba(255,255,255,0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead {
+      background-color: #d0d0d0;
+      color: #222222;
+    }
+    html.dark thead {
+      background-color: #3a3a3a;
+      color: #e0e0e0;
+    }
+
+    th, td {
+      border: 1px solid #999999;
+      padding: 0.5rem 1rem;
+      text-align: left;
+      color: #222222;
+    }
+    html.dark th, html.dark td {
+      border-color: #555555;
+      color: #ccc;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f0f0f0;
+    }
+    html.dark tbody tr:nth-child(even) {
+      background-color: #262626;
+    }
+
+    tbody tr:hover {
+      background-color: #c0c0c0;
+      cursor: default;
+    }
+    html.dark tbody tr:hover {
+      background-color: #555555;
+    }
   </style>
 
   <script>
@@ -107,7 +160,7 @@
     <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
       <div class="flex items-center space-x-5">
         <img src="images/logo.png" alt="Logo" class="h-8 w-auto object-contain" />
-        <h1 class="text-2xl font-bold cursor-default select-none">MySite</h1>
+        <h1 class="text-2xl font-bold cursor-default select-none">TechnoTyler</h1>
       </div>
 
       <div class="flex items-center space-x-8">
@@ -135,10 +188,10 @@
     </nav>
   </header>
 
-  <main class="max-w-4xl mx-auto space-y-20 mt-24 mb-10">
+  <main class="max-w-4xl mx-auto space-y-20 mt-24 mb-10 text-center">
     <section id="home" class="fade-in">
       <h2 class="text-4xl font-semibold mb-2">Hello!</h2>
-      <div class="w-1/2 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6"></div>
+      <div class="w-1/2 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6 mx-auto"></div>
       <p class="text-lg leading-relaxed">
         Welcome to my homepage! This site uses Tailwind CSS and includes a dark mode toggle with a floating navbar.
       </p>
@@ -146,7 +199,15 @@
 
     <section id="about" class="fade-in">
       <h2 class="text-3xl font-semibold mb-2">About Me</h2>
-      <div class="w-1/2 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6"></div>
+      <div class="w-1/2 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6 mx-auto"></div>
+      <div class="mx-auto w-64 h-64 rounded-lg overflow-hidden border-4 border-gray-700 shadow-lg">
+        <img
+          src="images/aboutme.png"
+          alt="About Me"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <br>
       <p>
         Learn more about me, my background, and interests.
       </p>
@@ -154,15 +215,41 @@
 
     <section id="skills" class="fade-in">
       <h2 class="text-3xl font-semibold mb-2">Skills</h2>
-      <div class="w-1/2 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6"></div>
+      <div class="w-1/2 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6 mx-auto"></div>
       <p>
         A summary of my technical skills and proficiencies.
       </p>
+      <section id="skills-table" class="fade-in">
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Topic</th>
+                <th>Skills &amp; Knowledge</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Web Development</td>
+                <td>HTML, CSS, JavaScript; Responsive design, SEO basics</td>
+              </tr>
+              <tr>
+                <td>Cloud Computing</td>
+                <td>AWS, Azure; Architecture, Security best practices</td>
+              </tr>
+              <tr>
+                <td>Databases</td>
+                <td>MySQL, MongoDB; Normalization, Indexing</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </section>
 
     <section id="homelab" class="fade-in">
       <h2 class="text-3xl font-semibold mb-2">HomeLab</h2>
-      <div class="w-1/2 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6"></div>
+      <div class="w-1/2 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6 mx-auto"></div>
       <p>
         Information about my HomeLab setup and projects goes here.
       </p>
@@ -170,7 +257,7 @@
   </main>
 
   <footer>
-    © 2025 MySite. All rights reserved.
+    © 2025 TechnoTyler. All rights reserved.
   </footer>
 
   <script>
