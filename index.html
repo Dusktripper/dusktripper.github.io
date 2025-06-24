@@ -1,7 +1,29 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coming Soon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Enable dark mode based on class */
+    html.dark {
+      --tw-bg-opacity: 1;
+      background-color: rgba(17, 24, 39, var(--tw-bg-opacity)); /* Tailwind slate-900 */
+      color: #e5e7eb; /* Tailwind gray-200 */
+    }
+  </style>
+</head>
+<body class="dark flex items-center justify-center min-h-screen p-4">
+  <div class="text-center">
+    <div class="mx-auto w-64 h-64 rounded-lg overflow-hidden border-4 border-gray-700 shadow-lg">
+      <img
+        src="images/logo.png"
+        alt="Logo"
+        class="w-full h-full object-cover"
+      />
+    </div>
+    <h1 class="mt-6 text-2xl font-semibold">Coming Soon!</h1>
+  </div>
 </body>
 </html>
