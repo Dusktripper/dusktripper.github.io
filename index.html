@@ -79,6 +79,7 @@
       transition: background-color 0.3s ease, color 0.3s ease;
       z-index: 100;
     }
+
     html.dark footer {
       background-color: rgba(26 28 34 / 0.8);
       color: #e5e7eb;
@@ -178,6 +179,7 @@
         <div class="flex flex-col items-center md:flex-row md:space-x-8 md:items-center mt-4 md:mt-0">
           <a href="#about" class="transition block py-2 md:py-0">About Me</a>
           <a href="#skills" class="transition block py-2 md:py-0">Skills</a>
+          <a href="#certifications" class="transition block py-2 md:py-0">Certifications</a>
           <a href="#homelab" class="transition block py-2 md:py-0">HomeLab</a>
           <button
             id="toggleTheme"
@@ -200,9 +202,9 @@
   </header>
 
   <main class="max-w-4xl mx-auto space-y-20 mt-24 mb-10 text-center">
-    <section id="about" class="fade-in">
+    <section id="about" class="fade-in scroll-mt-20">
       <h2 class="text-3xl font-semibold mb-2">About Me</h2>
-      <div class="w-1/2 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6 mx-auto"></div>
+      <div class="w-1/2 h-0.5 bg-gradient-to-r from-transparent via-gray-400/60 to-transparent mb-6 mx-auto"></div>
       <div class="mx-auto w-64 h-64 rounded-lg overflow-hidden border-4 border-gray-700 shadow-lg">
         <img
           src="images/aboutme.png"
@@ -220,9 +222,9 @@
       <p>I'm also an avid <b>homelab-er</b>, and run a complex <b>homelab</b> setup serving many different solutions.</p>      
     </section>
 
-    <section id="skills" class="fade-in">
+    <section id="skills" class="fade-in scroll-mt-20">
       <h2 class="text-3xl font-semibold mb-2">Skills</h2>
-      <div class="w-1/2 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6 mx-auto"></div>
+      <div class="w-1/2 h-0.5 bg-gradient-to-r from-transparent via-gray-400/60 to-transparent mb-6 mx-auto"></div>
 
       <p>A summary of my technical skills and proficiencies.</p>
         
@@ -260,11 +262,16 @@
           </table>
         </div>
       </section>
-      
+    </section>
+
+     <section id="certifications" class="fade-in scroll-mt-20">
+      <h2 class="text-3xl font-semibold mb-2">Certifications</h2>
+      <div class="w-1/2 h-0.5 bg-gradient-to-r from-transparent via-gray-400/60 to-transparent mb-6 mx-auto"></div>
+     
       <br>
       <p>I've held various certifications over the years, some of which are current and some expired, including:</p>
       
-      <section id="skills-table" class="fade-in">
+      <section id="certifications-table" class="fade-in">
         <div class="table-container">
           <table>
             <thead>
@@ -294,11 +301,11 @@
           </table>
         </div>
       </section>
-    </section>
+    </section>   
 
-    <section id="homelab" class="fade-in">
+    <section id="homelab" class="fade-in scroll-mt-20">
       <h2 class="text-3xl font-semibold mb-2">Homelab</h2>
-      <div class="w-1/2 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6 mx-auto"></div>
+      <div class="w-1/2 h-0.5 bg-gradient-to-r from-transparent via-gray-400/60 to-transparent mb-6 mx-auto"></div>
       <div class="mx-auto w-128 h-32 rounded-lg overflow-hidden border-4 border-gray-700 shadow-lg">
         <img
           src="images/1856737264.jpg"
@@ -309,7 +316,7 @@
       </div>
       <br>
       <h2 class="text-xl font-semibold mb-2">Background</h2>
-      <div class="w-16 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6 mx-auto"></div>
+      <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-gray-400/60 to-transparent mb-6 mx-auto"></div>
       <p>
         I started my homelab for the same reason many people do - to build a centralized media server solution. 
         I enjoyed the process so much that I wondered, <i>what other cool things can I do</i>, all within my own network?
@@ -318,7 +325,7 @@
       </p>
       <br>
       <h2 class="text-xl font-semibold mb-2">Early Days</h2>
-      <div class="w-16 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6 mx-auto"></div>
+      <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-gray-400/60 to-transparent mb-6 mx-auto"></div>
       <p>
         The early days of my homelab journey basically started with an ISP router/firewall/AP/switch combination machine in passthrough mode, a Dell Optiplex
         running Proxmox hypervisor software, a virtualized instance of PFSense, and a Synology NAS. And for good measure, I threw in a UPS for those unexpected outages.
@@ -327,7 +334,7 @@
       </p>
       <br>
       <h2 class="text-xl font-semibold mb-2">Transition Period</h2>
-      <div class="w-16 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6 mx-auto"></div>
+      <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-gray-400/60 to-transparent mb-6 mx-auto"></div>
       <p>
         This period was best defined by rapid <i>learning</i> and <i>growth</i>.
       </p>
@@ -384,14 +391,14 @@
       </p>
       <br>
       <h2 class="text-xl font-semibold mb-2">Current State</h2>
-      <div class="w-16 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6 mx-auto"></div>
+      <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-gray-400/60 to-transparent mb-6 mx-auto"></div>
       <p>
         Over time the homelab setup has evolved, but the core concepts are mostly all there. Here are some of the big
         changes:
       </p>
       <br>
 
-      <section id="skills-table" class="fade-in">
+      <section id="homelab-current-concepts-table" class="fade-in">
         <div class="table-container">
           <table>
             <thead>
@@ -444,14 +451,72 @@
 
       <br>
       <h2 class="text-xl font-semibold mb-2">Favorite Solutions</h2>
-      <div class="w-16 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6 mx-auto"></div>
+      <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-gray-400/60 to-transparent mb-6 mx-auto"></div>
       <p>
         Over the course of my homelabbing journey, I’ve tried many different solutions, both open source and proprietary. 
         Below are some of my favorites!
       </p>
+
+      <!-- Favorite Solutions Table: START -->
+      <section id="solutions-table" class="fade-in px-4 py-8">
+        <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          
+          <div class="rounded-xl shadow-md p-6 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
+            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">Hardware</h3>
+            <p class="text-sm text-gray-700 dark:text-gray-300">
+              I've apparently caught the Ubiquiti bug, as I've phased out much of my physical hardware in favor of the Ubiquiti equivalent.
+            </p>
+          </div>
+
+          <div class="rounded-xl shadow-md p-6 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
+            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">Firewall</h3>
+            <p class="text-sm text-gray-700 dark:text-gray-300">
+              I no longer use PFSense for my firewall solution, and have since moved on to a Unifi UDM SE.
+            </p>
+          </div>
+
+          <div class="rounded-xl shadow-md p-6 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
+            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">VPN</h3>
+            <p class="text-sm text-gray-700 dark:text-gray-300">
+              I run a VPN server on my firewall to enable full-tunnel access back to my home network for all of my family's devices.
+            </p>
+          </div>
+
+          <div class="rounded-xl shadow-md p-6 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
+            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">Hypervisor</h3>
+            <p class="text-sm text-gray-700 dark:text-gray-300">
+              Proxmox is still my go-to, with no plans of changing anytime soon.
+            </p>
+          </div>
+
+          <div class="rounded-xl shadow-md p-6 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
+            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">Docker</h3>
+            <p class="text-sm text-gray-700 dark:text-gray-300">
+              Heavily used, and always expanding.
+            </p>
+          </div>
+
+          <div class="rounded-xl shadow-md p-6 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
+            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">Kubernetes</h3>
+            <p class="text-sm text-gray-700 dark:text-gray-300">
+              Heavily used, and still enjoying Ingress NGINX in place of other reverse proxy solutions.
+            </p>
+          </div>
+
+          <div class="rounded-xl shadow-md p-6 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
+            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">SmartHome</h3>
+            <p class="text-sm text-gray-700 dark:text-gray-300">
+              Utilize Home Assistant in conjunction with Zigbee-enabled devices for a <i>smarter</i> home.
+            </p>
+          </div>
+
+        </div>
+      </section>
+      <!-- Favorite Solutions Table: END -->
+
       <br>
       <h2 class="text-xl font-semibold mb-2">Goals/Accomplishments/Things I'm Proud Of???</h2>
-      <div class="w-16 h-0.5 bg-gradient-to-r from-gray-400/60 via-gray-400/30 to-transparent mb-6 mx-auto"></div>
+      <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-gray-400/60 to-transparent mb-6 mx-auto"></div>
       <p>
         Put Stuff Here
       </p>
