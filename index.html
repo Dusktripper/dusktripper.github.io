@@ -18,6 +18,7 @@
       background: linear-gradient(135deg, #0f1115 0%, #1a1c22 100%);
       color: #f9fafb;
     }
+    
     html.dark a {
       color: #60a5fa;
     }
@@ -34,6 +35,7 @@
       -webkit-backdrop-filter: saturate(180%) blur(10px);
       transition: background-color 0.3s ease;
     }
+    
     html.dark header {
       background-color: rgba(26, 28, 34, 0.8);
     }
@@ -43,6 +45,7 @@
       transform: translateY(20px);
       transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     }
+    
     .fade-in.visible {
       opacity: 1;
       transform: translateY(0);
@@ -51,6 +54,7 @@
     header nav a {
       color: #111 !important;
     }
+    
     html.dark header nav a {
       color: #e5e7eb !important;
     }
@@ -58,6 +62,7 @@
     header nav a:hover {
       color: #3b82f6 !important;
     }
+    
     html.dark header nav a:hover {
       color: #60a5fa !important;
     }
@@ -93,6 +98,7 @@
       margin-top: 1.5rem;
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
+    
     html.dark .table-container {
       border-color: #888888;
       box-shadow: 0 0 8px rgba(255,255,255,0.1);
@@ -107,6 +113,7 @@
       background-color: #d0d0d0;
       color: #222222;
     }
+    
     html.dark thead {
       background-color: #3a3a3a;
       color: #e0e0e0;
@@ -118,6 +125,7 @@
       text-align: left;
       color: #222222;
     }
+    
     html.dark th, html.dark td {
       border-color: #555555;
       color: #ccc;
@@ -126,6 +134,7 @@
     tbody tr:nth-child(even) {
       background-color: #f0f0f0;
     }
+    
     html.dark tbody tr:nth-child(even) {
       background-color: #262626;
     }
@@ -134,6 +143,7 @@
       background-color: #c0c0c0;
       cursor: default;
     }
+
     html.dark tbody tr:hover {
       background-color: #555555;
     }
@@ -457,56 +467,85 @@
         Below are some of my favorites!
       </p>
 
-      <!-- Favorite Solutions Table: START -->
+      <!-- Favorite Solutions Grid: START -->
       <section id="solutions-table" class="fade-in px-4 py-8">
         <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           
           <div class="rounded-xl shadow-md p-6 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
-            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">Hardware</h3>
+            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">
+              <a href="https://www.ui.com/" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                Ubiquiti Unifi
+              </a>
+            </h3>
             <p class="text-sm text-gray-700 dark:text-gray-300">
-              I've apparently caught the Ubiquiti bug, as I've phased out much of my physical hardware in favor of the Ubiquiti equivalent.
+              After playing around with many solutions over the years I really appriciate that this solution just <i>works</i>. 
             </p>
           </div>
 
           <div class="rounded-xl shadow-md p-6 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
-            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">Firewall</h3>
+            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">
+              <a href="https://www.wireguard.com/" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                Wireguard
+              </a>
+            </h3>
             <p class="text-sm text-gray-700 dark:text-gray-300">
-              I no longer use PFSense for my firewall solution, and have since moved on to a Unifi UDM SE.
+              An performant medium that allows me to securely connect all devices back to my home network.  What's not to love?
             </p>
           </div>
 
           <div class="rounded-xl shadow-md p-6 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
-            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">VPN</h3>
+            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">
+              <a href="https://github.com/gethomepage/homepage" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                Homepage
+              </a>
+            </h3>
             <p class="text-sm text-gray-700 dark:text-gray-300">
-              I run a VPN server on my firewall to enable full-tunnel access back to my home network for all of my family's devices.
+              Hands-down the best way to organize a homelab!
             </p>
           </div>
 
           <div class="rounded-xl shadow-md p-6 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
-            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">Hypervisor</h3>
+            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">
+              <a href="https://github.com/semaphoreui/semaphore" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                Semaphore
+              </a>
+            </h3>
             <p class="text-sm text-gray-700 dark:text-gray-300">
-              Proxmox is still my go-to, with no plans of changing anytime soon.
+              Having many Linux virtuals machines is great. Manually updating all of them is not.  Semaphore solves this issue.
             </p>
           </div>
 
           <div class="rounded-xl shadow-md p-6 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
-            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">Docker</h3>
+            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">
+              <a href="https://github.com/dani-garcia/vaultwarden" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                VaultWarden
+              </a>
+            </h3>
             <p class="text-sm text-gray-700 dark:text-gray-300">
-              Heavily used, and always expanding.
+              Personal password storage that is only accessable locally or via the VPN server I control is very satisfying.
             </p>
           </div>
 
           <div class="rounded-xl shadow-md p-6 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
-            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">Kubernetes</h3>
+            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">
+              <a href="https://github.com/go-gitea/gitea" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                Gitea
+              </a>
+            </h3>
             <p class="text-sm text-gray-700 dark:text-gray-300">
-              Heavily used, and still enjoying Ingress NGINX in place of other reverse proxy solutions.
+              Perfect for self-hosting code for various personal projects!
             </p>
           </div>
 
           <div class="rounded-xl shadow-md p-6 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
-            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">SmartHome</h3>
+            <h3 class="font-bold text-center text-gray-900 dark:text-gray-100 text-lg mb-2">
+              <a href="https://github.com/renovatebot/renovate" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                Renovate
+              </a>
+            </h3>
             <p class="text-sm text-gray-700 dark:text-gray-300">
-              Utilize Home Assistant in conjunction with Zigbee-enabled devices for a <i>smarter</i> home.
+              Have no fear—automated container image updates are here! Jokes aside, this saves loads of time and provides an easier path to 
+              keeping your container images up to date.
             </p>
           </div>
 
