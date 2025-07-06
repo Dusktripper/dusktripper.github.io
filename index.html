@@ -162,6 +162,7 @@
     }
   </style>
 
+  <!-- Dark Mode Selection: START -->
   <script>
     (function() {
       try {
@@ -178,9 +179,11 @@
       }
     })();
   </script>
+  <!-- Dark Mode Selection: END -->
 </head>
 <body class="min-h-screen font-sans p-8">
 
+  <!-- Header: START -->
   <header class="fixed top-0 left-0 right-0 z-50 shadow-md">
     <nav class="max-w-6xl mx-auto flex flex-wrap items-center justify-between px-6 py-4">
       <div class="flex items-center space-x-5">
@@ -188,7 +191,7 @@
         <h1 class="text-2xl font-bold cursor-default select-none">TechnoTyler</h1>
       </div>
 
-      <!-- Hamburger Menu -->
+      <!-- Hamburger Menu for Mobile Devices-->
       <div class="block md:hidden">
         <button id="nav-toggle" class="text-gray-700 dark:text-gray-300 focus:outline-none">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -223,8 +226,12 @@
       </div>
     </nav>
   </header>
+  <!-- Header: END -->
 
+  <!-- Main: START -->
   <main class="max-w-4xl mx-auto space-y-20 mt-24 mb-10 text-center">
+    
+    <!-- About Me: START -->
     <section id="about" class="fade-in scroll-mt-20">
       <h2 class="text-3xl font-semibold mb-2">About Me</h2>
       <div class="w-1/2 h-0.5 bg-gradient-to-r from-transparent via-gray-400/60 to-transparent mb-6 mx-auto"></div>
@@ -244,13 +251,13 @@
       <br>
       <p>I'm also an avid <b>homelab-er</b>, and run a complex <b>homelab</b> setup serving many different solutions.</p>      
     </section>
+    <!-- About Me: END -->
 
+    <!-- Skills: START -->
     <section id="skills" class="fade-in scroll-mt-20">
       <h2 class="text-3xl font-semibold mb-2">Skills</h2>
       <div class="w-1/2 h-0.5 bg-gradient-to-r from-transparent via-gray-400/60 to-transparent mb-6 mx-auto"></div>
 
-      <p>A summary of my technical skills and proficiencies.</p>
-        
       <section id="skills-table" class="fade-in">
         <div class="table-container">
           <table>
@@ -286,7 +293,9 @@
         </div>
       </section>
     </section>
+    <!-- Skills: END -->
 
+    <!-- Certifications: START -->
      <section id="certifications" class="fade-in scroll-mt-20">
       <h2 class="text-3xl font-semibold mb-2">Certifications</h2>
       <div class="w-1/2 h-0.5 bg-gradient-to-r from-transparent via-gray-400/60 to-transparent mb-6 mx-auto"></div>
@@ -324,8 +333,10 @@
           </table>
         </div>
       </section>
-    </section>   
+    </section>
+    <!-- Certifications: END -->  
 
+    <!-- Homelab: START -->
     <section id="homelab" class="fade-in scroll-mt-20">
       <h2 class="text-3xl font-semibold mb-2">Homelab</h2>
       <div class="w-1/2 h-0.5 bg-gradient-to-r from-transparent via-gray-400/60 to-transparent mb-6 mx-auto"></div>
@@ -561,7 +572,6 @@
               keeping your container images up to date.
             </p>
           </div>
-
         </div>
       </section>
       <!-- Favorite Solutions Table: END -->
@@ -574,7 +584,9 @@
       </p>
       <br>       
     </section>
+    <!-- Homelab: END --> 
   </main>
+  <!-- Main: END -->
 
   <footer>
     © 2025 TechnoTyler. All rights reserved.
